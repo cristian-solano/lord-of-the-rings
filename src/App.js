@@ -18,7 +18,7 @@ function App() {
 
   const [newAdventure, setNewAdventure] = useState(adventureData)
   //agregar una aventura nueva
-  
+
   const addAdventure = (adventure) => {
     newAdventure.adventure = adventure
     setNewAdventure([
@@ -34,7 +34,6 @@ function App() {
       <h1>Hi, User</h1>
       
       <Aside/>
-      <Dashboard></Dashboard>
       <Form addAdventure={addAdventure} key={newAdventure.adventure}></Form>
       <Create adventure={newAdventure} />
       

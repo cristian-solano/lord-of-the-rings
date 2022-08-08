@@ -1,5 +1,5 @@
-import Placeholder from "../Images/Placeholder.png";
 import '../Style/create.css';
+import Placeholder from "../Images/Iconos/Placeholder.png";
 
 const Create = (props) => {
 
