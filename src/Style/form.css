@@ -1,0 +1,139 @@
+
+.item {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+.label  {
+    width: 119px;
+    height: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 38px;
+    letter-spacing: -0.5px;
+    padding: 10px;
+    border-radius: 6px;
+
+    color: #F7F7F7;
+    background-color:#4E1469;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.nav_input {
+    display: none;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dbd7d7;
+    background-color: #F7F7F7;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: 75%;
+    right: 0;
+    top: 18%;
+    bottom: 0;
+    padding: 5px;
+    
+    
+
+    
+} 
+.form > h3  {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.form > .form_title  {
+    border-bottom: 1px solid #292828;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.form > .form_title > h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+
+.form > .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+
+}
+
+.form > .info > .adventure {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.form > .info > .origen,
+.form > .info > .destination {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+
+.form > .info > .adventure > input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+
+}
+
+.form > .info > .origen > input ,
+.form > .info > .destination > input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.form > .character {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.form > .character > select {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+

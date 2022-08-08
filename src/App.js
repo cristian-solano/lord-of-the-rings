@@ -1,23 +1,43 @@
-import logo from './logo.svg';
+
+
+import { useEffect, useState } from 'react';
 import './App.css';
+import Aside from './Components/Aside';
+import Create from './Components/Create';
+import Dashboard from './Components/Dashboard';
+import Form from './Components/Form';
+import SelectCharacter from './Components/SelectCharacter';
+
 
 function App() {
+
+  const adventureData = [
+    { adventure: 'Celebration in hobbintown',character: 'Frodo', origin: 'Craig', destination: 'Ben' },
+    { adventure: 'Final Battle',character: 'Legolas', origin: 'Two Towers', destination: 'Gondor' }
+    
+  ]
+
+  const [newAdventure, setNewAdventure] = useState(adventureData)
+
+  const addAdventure = (adventure) => {
+    newAdventure.adventure = adventure
+    setNewAdventure([
+        ...newAdventure,
+        adventure
+    ])
+}
+
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hi, User</h1>
+      
+      <Aside/>
+      <Dashboard></Dashboard>
+      <Form addAdventure={addAdventure} key={newAdventure.adventure}></Form>
+      <Create adventure={newAdventure} />
+      
     </div>
   );
 }
