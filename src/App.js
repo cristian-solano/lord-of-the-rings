@@ -1,16 +1,15 @@
 
 
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 import './App.css';
 import Aside from './Components/Aside';
 import Create from './Components/Create';
 import Dashboard from './Components/Dashboard';
 import Form from './Components/Form';
-import SelectCharacter from './Components/SelectCharacter';
 
 
 function App() {
-
+  
   const adventureData = [
     { adventure: 'Celebration in hobbintown',character: 'Frodo', origin: 'Craig', destination: 'Ben' },
     { adventure: 'Final Battle',character: 'Legolas', origin: 'Two Towers', destination: 'Gondor' }
@@ -18,7 +17,8 @@ function App() {
   ]
 
   const [newAdventure, setNewAdventure] = useState(adventureData)
-
+  //agregar una aventura nueva
+  
   const addAdventure = (adventure) => {
     newAdventure.adventure = adventure
     setNewAdventure([

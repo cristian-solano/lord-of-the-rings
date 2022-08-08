@@ -1,0 +1,65 @@
+.create-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:700px;
+    border: 1px solid #9c9b9b;
+    background: #F9F9F9;
+    padding: 20px 0px 20px 16px;
+    margin: 10px;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.create-info > img {
+    width: 87px;
+    height: 71px;
+    border-radius: 4px;
+}
+
+
+.create-info > .create-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+    width: 400px;
+
+
+}
+
+.create-info > .create-title > .create-adv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.create-info > .create-title > h1 {
+    color: #5365F8;
+}
+
+.create-info > .create-title > p {
+    font-weight: bold;
+    color: #373B5C;
+}
+
+.create-info > .create-destiny {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px
+}
+
+.create-info > .create-destiny > p {
+    font-size: 14px;
+    font-weight: bold;
+}
+

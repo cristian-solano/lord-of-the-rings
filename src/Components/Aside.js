@@ -3,8 +3,10 @@ import Dashboard from "../Images/Iconos/Dashboard.svg";
 import Calendar from "../Images/Iconos/Calendar.svg";
 import Characters from "../Images/Iconos/Characters.svg";
 import Chat from "../Images/Iconos/Chat.svg";
+import Loguot from "../Images/Iconos/Loguot.svg";
 import '../Style/aside.css'
 
+//menu principal de la api
 const Aside = () => {
     return (
         <div className="aside">
@@ -32,7 +34,12 @@ const Aside = () => {
                     <img src={Chat} alt={'chat'} />
                     <p>Chat</p>
                 </a>
+               
             </div>
+            <div className="logout">
+                <a href="#end"><img src={Loguot} alt={'logout'} /></a>
+            </div>
+            
         </div>
     )
 }

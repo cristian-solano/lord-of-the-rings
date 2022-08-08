@@ -8,14 +8,16 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 const Form = (props) => {
     const { register, formState: { errors }, watch ,handleSubmit,  } = useForm();
     const onSubmit = (data, e) => {
-        console.log(data)
         props.addAdventure(data)
         e.target.reset();
         
     };
+    //chequeo del fomulario
     const checkForm = watch('checkForm');
     const [character, setCharacter] = useState();
     
+
+    //renderizado de la aventura
     const [data, setData] = useState({
         adventure: '',
         origin: '',
@@ -24,16 +26,15 @@ const Form = (props) => {
     });
     
     
-    
+    //rellenar campos vacios, siguiente la secuecia del evento
     const handleInputChange = (e) => {
-        console.log(e.target.value)
          setData({
             ...data,
             [e.target.name] : e.target.value
         })
     }
   
-
+    //llamado de los caracteres con la api
     useEffect(() => {
     const headers = {
       'Accept': 'application/json',
@@ -109,6 +110,7 @@ const Form = (props) => {
                             </select>
                         </div>
                         <input className="button" type="submit"  value="Create"/> 
+                {/* impresion de los comandos ejecutados en el formulario */}
                         <p>{data.adventure} </p>
                         <p>{data.origin}</p>
                         <p>{data.destination}</p>

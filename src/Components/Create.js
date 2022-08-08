@@ -1,4 +1,5 @@
-
+import Placeholder from "../Images/Placeholder.png";
+import '../Style/create.css';
 
 const Create = (props) => {
 
@@ -9,15 +10,15 @@ const Create = (props) => {
         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
             { props.adventure.length > 0 ?
                 props.adventure.map(adventure => (
-                <div key={adventure.adventure}>
-                    <div>
-                        <h1>{adventure.adventure}</h1>
+                <div className="create-info" key={adventure.adventure}>
+                    <img src={Placeholder} alt={'placeholder'} />
+                    <div className="create-title">
+                        <h1 className="create-adv">{adventure.adventure}</h1>
                         <p>{adventure.character}</p>
-                        
                     </div>
-                    <div>
-                        <p>{adventure.origin}</p>
-                        <p>{adventure.destination}</p>
+                    <div className="create-destiny">
+                        <p>Origin: {adventure.origin}</p>
+                        <p>Destination: {adventure.destination}</p>
                     </div> 
                 </div>
                 )) : (
