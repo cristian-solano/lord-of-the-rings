@@ -42,8 +42,8 @@
     position: absolute;
     left: 75%;
     right: 0;
-    top: 18%;
-    bottom: 0;
+    top: 0%;
+    bottom: 0%;
     padding: 5px;
     
     
@@ -129,7 +129,17 @@
     font-weight: bold;
 }
 
-
+.button {
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    background-color: #4E1469; 
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    
+}
 
 
 
